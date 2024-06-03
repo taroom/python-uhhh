@@ -5,17 +5,14 @@ playing = input("Mau Main? ")
 if playing != "ya":
     quit()
 
+questionList = ["Apa kepanjangan dari RI? ", "Apa kepanjangan dari TAPERA? ", "Apa kepanjangan IKN? "]
+answerList = ["republik indonesia", "tabungan perumahan rakyat", "ibu kota negara"]
+
 print("Anda ternyata main! ")
 
-answer = input("Apa singkatan dari VS? ")
-if answer == "versus":
-    print("Anda benar")
-else:
-    print("Anda salah")
-
-# Ulangi Lagi
-answer = input("Apa singkatan dari tapera? ")
-if answer == "tabungan perumahan rakyat":
-    print("Anda benar")
-else:
-    print("Anda salah")
+for i, v in enumerate(questionList):
+    answer = input(v)
+    if answer == answerList[i]:
+        print("Anda benar")
+    else:
+        print("Anda salah")
