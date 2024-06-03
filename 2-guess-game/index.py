@@ -1,6 +1,7 @@
 import random
 
 num_top = input("Ketikkan Angka: ")
+trying_guess = 0
 
 if num_top.isdigit():
     num_top = int(num_top)
@@ -14,8 +15,8 @@ else:
 random_number = random.randint(0, num_top)
 
 while True:
+    trying_guess += 1
     guess_num = input("Masukkan tebakan Anda ..")
-
 
     if guess_num.isdigit():
         guess_num = int(guess_num)
@@ -23,14 +24,13 @@ while True:
         print("Masukkan angka saja bro")
         continue
 
-
     if guess_num == random_number:
         print("Anda benar! permainan berakhir")
         break
     else:
         print("Anda salah! lanjuttt")
 
-
+print("Anda berhasil menebak dengan", trying_guess, "Percobaan")
 
 
 
