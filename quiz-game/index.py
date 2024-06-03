@@ -10,9 +10,14 @@ answerList = ["republik indonesia", "tabungan perumahan rakyat", "ibu kota negar
 
 print("Anda ternyata main! ")
 
+score = 0
+
 for i, v in enumerate(questionList):
     answer = input(v)
     if answer.lower() == answerList[i]:
         print("Anda benar")
+        score += 1
     else:
         print("Anda salah")
+
+print("score Anda : "+ str(score) +" Jawaban Benar")
