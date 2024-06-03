@@ -5,8 +5,8 @@ playing = input("Mau Main? ")
 if playing != "ya":
     quit()
 
-questionList = ["Apa kepanjangan dari RI? ", "Apa kepanjangan dari TAPERA? ", "Apa kepanjangan IKN? "]
-answerList = ["republik indonesia", "tabungan perumahan rakyat", "ibu kota negara"]
+questionList = ["Apa kepanjangan dari RI? ", "Apa kepanjangan dari TAPERA? ", "Apa kepanjangan IKN? ", "Apa kepanjangan dari SBY? "]
+answerList = ["republik indonesia", "tabungan perumahan rakyat", "ibu kota negara", "surabaya"]
 
 print("Anda ternyata main! ")
 
@@ -21,3 +21,4 @@ for i, v in enumerate(questionList):
         print("Anda salah")
 
 print("score Anda : "+ str(score) +" Jawaban Benar")
+print("benar : "+ str((score/len(questionList)) * 100) +"%")
