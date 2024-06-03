@@ -28,7 +28,12 @@ while True:
         print("Anda benar! permainan berakhir")
         break
     else:
-        print("Anda salah! lanjuttt")
+        print("Anda salah! lanjuttt, petunjuk")
+        if guess_num > random_number:
+            print("Tebakan Anda terlalu keatas")
+        else:
+            print("Tebakan Anda Terlalu Kebawah")
+
 
 print("Anda berhasil menebak dengan", trying_guess, "Percobaan")
 
