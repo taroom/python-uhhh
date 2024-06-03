@@ -12,7 +12,7 @@ print("Anda ternyata main! ")
 
 for i, v in enumerate(questionList):
     answer = input(v)
-    if answer == answerList[i]:
+    if answer.lower() == answerList[i]:
         print("Anda benar")
     else:
         print("Anda salah")
